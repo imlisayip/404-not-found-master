@@ -1,37 +1,42 @@
 import React from "react";
 import ReactDom from "react-dom";
-import "./styles.css"
+import "./styles.scss"
+import scarecrow from "url:./src/Scarecrow.png"
 
+const Header = () => {
+    return (
+        <div className="nav">
+            404 not found
+        </div>
+    )
+}
+const Image = () => {
+    return (
+        <div className="image">
+            <img src={scarecrow} alt="scarecrow" />
+        </div>
+    )
+}
+const Info = () => {
+    return (
+        <div className="info">
+            <h1>I have bad news for you</h1>
+            <p>
+                The page you are looking for might be removed or is temporarily unavailable
+            </p>
+            <button>Back to Homepage</button>
+        </div>
+    )
+}
 const App = () => {
     return (
-        <div className="welcome">
-            <div className="welcome-text">
-                <h1>
-                    Welcome to <a href="https://devchallenges.io/" target="_blank"
-                    >devchallenges.io</a
-                    >
-                </h1>
-
-                <p>
-                    If you have any questions, don't hesitate to ask on Discord. Here are
-                    7 general steps to complete the challenge:
-                </p>
-            </div>
-
-            <ul>
-                <li><b>Step 1:</b> Create a new repository on github</li>
-                <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-                <li>
-                    <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-                </li>
-                <li><b>Step 4:</b> Complete all user stories</li>
-                <li><b>Step 5:</b> Update README.md</li>
-                <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-                <li>
-                    <b>Step 7:</b> Share your solution on Discord, Twitter and other platforms to ask for feedback
-                </li>
-            </ul>
+        <>
+        <Header/>
+        <div className="media-text">
+            <Image/>
+            <Info />
         </div>
+        </>
     )
 }
 ReactDom.render(<App />, document.getElementById("app"));

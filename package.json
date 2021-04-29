@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-   "scripts": {
+  "scripts": {
     "start": "parcel serve ./index.html",
     "build": "parcel build ./index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2",
     "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {
