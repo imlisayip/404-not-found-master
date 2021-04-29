@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import "./styles.scss"
-import scarecrow from "url:./src/Scarecrow.png"
+import scarecrow from "url:./Scarecrow.png"
 
 const Header = () => {
     return (
@@ -31,11 +31,11 @@ const Info = () => {
 const App = () => {
     return (
         <>
-        <Header/>
-        <div className="media-text">
-            <Image/>
-            <Info />
-        </div>
+            <Header />
+            <div className="media-text">
+                <Image />
+                <Info />
+            </div>
         </>
     )
 }

@@ -1,11 +1,11 @@
 {
   "name": "404-not-found-master",
   "version": "1.0.0",
-  "main": "index.html",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve ./index.html",
-    "build": "parcel build ./index.html"
+    "clean": "rm -rf dist .cache",
+    "build": "parcel build ./index.html",
+    "start": "parcel ./index.html"
   },
   "devDependencies": {
     "@parcel/transformer-image": "2.0.0-beta.2",
